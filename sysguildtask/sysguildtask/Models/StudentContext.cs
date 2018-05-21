@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
+
+//Controller for Context for get and set methods for a student into db
 namespace sysguildtask.Models
 {
     public class StudentContext : DbContext
@@ -7,8 +9,9 @@ namespace sysguildtask.Models
         public StudentContext(DbContextOptions<StudentContext> options)
             : base(options)
         {
-        }
 
+        }
+        
         public DbSet<Student> Students { get; set; }
     }
 }
