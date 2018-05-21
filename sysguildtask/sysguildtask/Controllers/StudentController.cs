@@ -28,6 +28,12 @@ namespace sysguildtask.Controllers
 
         }//end studentContoller
 
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+
         [HttpGet]
         public List<Student> GetAll()
         {

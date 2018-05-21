@@ -1,0 +1,41 @@
+﻿@model List<sysguildtask.Model.Student>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table>
+            @{
+                foreach (var student in Model)
+                {
+                    <tr>
+                        <td>
+                            First Name: @student.FirstName
+                        </td>
+                        <td>
+                            Last Name: @studnet.LastName
+                        </td>
+                        <td>
+                            Email: @student.EmailID
+                        </td>
+                        <td>
+                            Phone Number: student.PhoneNO
+                        </td>
+                    </tr>
+
+                }
+             }
+        </table>
+    </div>
+</body>
+</html>
